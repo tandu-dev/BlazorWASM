@@ -1,23 +1,28 @@
-﻿@page "/todo"
+﻿@page "/"
+@page "/todo"
 
 <PageTitle>Todo</PageTitle>
 
 <h1>Todo (@todos.Count(todo => !todo.IsDone))</h1>
 
 
-<ul>
-    @foreach (var todo in todos)
-    {
-        <li>
-            <input type="checkbox" @bind="todo.IsDone" />
-            <input @bind="todo.Title" />
-        </li>
-    }
-</ul>
+<MudPaper Width="400px">
+    <MudList Clickable="true">
+         @foreach (var todo in todos)
+         {
+            <MudListItem >
+                <MudStack Row="true">
+                    <MudCheckBox @bind-Checked="@todo.IsDone" Label="@todo.Title"></MudCheckBox><MudIconButton @onclick="@(() => { DeleteTodo(@todo);})" Icon="@Icons.Material.Filled.Delete"></MudIconButton>
+                </MudStack>
+            </MudListItem>
+         }
+    </MudList>
+</MudPaper>
 
 
-<input placeholder="Something todo" @bind="newTodo" />
-<button @onclick="AddTodo">Add todo</button>
+
+<MudTextField placeholder="Something todo" @bind-Value="newTodo" Variant="Variant.Outlined"/>
+<MudButton @onclick="AddTodo" Variant="Variant.Filled" Color="Color.Primary">Add todo</MudButton>
 
 @code {
     private string? newTodo;
@@ -30,5 +35,8 @@
             todos.Add(new TodoItem { Title = newTodo });
             newTodo = string.Empty;
         }
+    }
+    private void DeleteTodo(TodoItem item){
+        todos.Remove(item);
     }
 }

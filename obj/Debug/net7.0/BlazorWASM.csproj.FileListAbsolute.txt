@@ -826,3 +826,7 @@ C:\Projects\BlazorWASM\obj\Debug\net7.0\BlazorWASM.dll
 C:\Projects\BlazorWASM\obj\Debug\net7.0\refint\BlazorWASM.dll
 C:\Projects\BlazorWASM\obj\Debug\net7.0\BlazorWASM.pdb
 C:\Projects\BlazorWASM\obj\Debug\net7.0\ref\BlazorWASM.dll
+C:\Projects\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\MudBlazor.dll
+C:\Projects\BlazorWASM\bin\Debug\net7.0\wwwroot\_framework\MudBlazor.dll.gz
+C:\Projects\BlazorWASM\bin\Debug\net7.0\MudBlazor.dll
+C:\Projects\BlazorWASM\obj\Debug\net7.0\build-gz\cSOVaZr4.gz
