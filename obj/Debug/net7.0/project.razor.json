@@ -157,6 +157,43 @@
         }
       },
       {
+        "HashCode": 577588385,
+        "Kind": "Components.Component",
+        "Name": "BlazorWASM.Pages.ToDo",
+        "AssemblyName": "BlazorWASM",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ToDo"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorWASM.Pages.ToDo",
+          "Common.TypeNameIdentifier": "ToDo",
+          "Common.TypeNamespace": "BlazorWASM.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 42069303,
+        "Kind": "Components.Component",
+        "Name": "BlazorWASM.Pages.ToDo",
+        "AssemblyName": "BlazorWASM",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorWASM.Pages.ToDo"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "BlazorWASM.Pages.ToDo",
+          "Common.TypeNameIdentifier": "ToDo",
+          "Common.TypeNamespace": "BlazorWASM.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
         "HashCode": -306284537,
         "Kind": "Components.Component",
         "Name": "BlazorWASM.Shared.SurveyPrompt",
